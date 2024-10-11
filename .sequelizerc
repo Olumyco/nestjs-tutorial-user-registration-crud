@@ -1,0 +1,9 @@
+const path = require('path');
+require('dotenv').config();
+
+module.exports = {
+    'config': path.resolve('dist', 'shared', 'database', 'config', 'config.js'),
+    'models-path': path.resolve('dist', 'shared', 'database', 'models'),
+    'migrations-path': path.resolve('dist', 'shared', 'database', 'migrations'),
+    'seeders-path': path.resolve('dist', 'shared', 'database', 'seeders'),
+};
